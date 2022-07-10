@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
     region = "sa-east-1"
-	bucket = "ecs-infra-bucket"
-    key    = "sqs/terraform.tfstate"
+    bucket = "ecs-infra-bucket"
+    key    = "infrasqs/terraform.tfstate"
   }
   required_providers {
     aws = {
